@@ -1,8 +1,12 @@
 :root {
     --sage: #118B50;
+    --dark-sage: #006930;
     --mint: #5DB996;
+    --dark-mint: #4CA885;
     --green-yellowish: #E3F0AF;
     --semi-white: #FBF6E9;
+    --white: #FFF;
+    --black: #0E1111;
 }
 
 /* Reset All to Default */
@@ -11,4 +15,339 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* All Styles */
+
+body {
+    font-family: 'Outfit', serif;
+    background-color: var(--white);
+    transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+body.darkMode {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body.darkMode header {
+    background-color: var(--black);
+    border-bottom-color: var(--semi-white);
+}
+
+body.darkMode header nav ul li a {
+    color: var(--white);
+}
+
+body.darkMode header nav ul #moon {
+    display: none;
+}
+
+body.darkMode header nav ul #sun {
+    display: inline-block;
+    padding: 0;
+}
+
+body.darkMode footer {
+    background-color: var(--dark-mint);
+}
+
+/* Header and Nav Styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--white);
+    height: 7rem;
+    border-bottom: 1px solid var(--black);
+    transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+header img {
+    padding: .9rem;
+    width: 9.7rem;
+}
+
+header nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header nav ul img {
+    position: relative;
+    top: .5rem;
+    cursor: pointer;
+}
+
+#moon {
+    width: 2rem;
+    padding: 0;
+}
+
+header nav ul img.sun {
+    display: none;
+    width: 2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--mint);
+    text-underline-offset: 5px;
+}
+
+/* Info Section Style */
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 4rem 0;
+}
+
+.info-img img {
+    justify-self: center;
+    min-width: 20rem;
+    max-width: 30rem;
+    min-height: 25rem;
+    border-radius: 50%;
+}
+
+.info-text {
+    justify-self: right;
+    align-self: center;
+    text-align: right;
+}
+
+.info-text h2 {
+    font-size: 3rem;
+    color: var(--sage);
+    margin: .5rem 0;
+}
+
+.info-text p {
+    justify-self: right;
+    width: 70%;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+}
+
+.info-text button {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 14rem;
+    background-color: var(--sage);
+    color: var(--white);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 30ms ease-in;
+}
+
+.info-text button:active {
+    background-color: var(--dark-sage);
+}
+
+/* Gallery Style */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+    height: 34rem;
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+.gallery-text {
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-text h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-text p {
+    margin: 0 auto;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.photos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    padding: 0 4rem;
+}
+
+.photos img {
+    width: 100%;
+    height: 85%;
+    transition: transform 100ms linear, box-shadow 100ms linear;
+}
+
+.photos img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(105%);
+}
+
+/* Servicios Styles */
+
+.servicios {
+    display: flex;
+    width: 100%;
+    height: 43rem;
+    align-items: center;
+}
+
+.servicios-text {
+    width: 100%;
+    padding-left: 3rem;
+    overflow: scroll;
+}
+
+.servicios-text h3 {
+    font-size: 2rem;
+    color: var(--sage);
+    margin-bottom: 1.2rem;
+}
+
+.servicios-text ul {
+    list-style-image: url('/assets/img/paw.svg');
+}
+
+.servicios-text ul li {
+    height: 2rem;
+    list-style-position: inside;
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: .2rem 0;
+    font-weight: 500;
+}
+
+.servicios-text ul li:hover {
+    color: var(--dark-sage);
+}
+
+.servicios-text .li-hidden {
+    display: none;
+    width: 70%;
+    margin-bottom: 1.4rem;
+}
+
+.servicios-text .li-hidden.active {
+    display: block;
+}
+
+.servicios-img {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 23rem);
+    grid-template-rows: repeat(2, 15rem);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.servicios-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-yellowish);
+    padding: 4rem;
+}
+
+footer section {
+    width: 20%;
+}
+
+footer section h6 {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+footer section ul li {
+    margin: .7rem 0;
+    list-style: none;
+}
+
+footer section ul li a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+footer section ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-email-section h6 {
+    margin-bottom: .7rem;
+}
+
+.footer-email-section p {
+    margin-bottom: .7rem;
+    color: var(--black);
+}
+
+.footer-email-section input {
+    border: none;
+    width: 20.2rem;
+    height: 2.88rem;
+    border-radius: .5rem;
+    margin-right: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+.footer-email-section input::placeholder {
+    color: var(--white);
+}
+
+.footer-email-section button {
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--white);
+    transition: border 100ms linear;
+    cursor: pointer;
+    position: relative;
+    bottom: 2.6rem;
+    left: 14.7rem;
 }
