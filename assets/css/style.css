@@ -1,0 +1,14 @@
+:root {
+    --sage: #118B50;
+    --mint: #5DB996;
+    --green-yellowish: #E3F0AF;
+    --semi-white: #FBF6E9;
+}
+
+/* Reset All to Default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
