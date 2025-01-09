@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="pc">
         <nav>
             <a href="https://github.com/JunLovin" target="_blank"><img src="assets/img/logo.png" alt=""></a>
             <ul>
@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="pc">
         <section class="info" id="info">
             <article class="info-img">
                 <img src="assets/img/Dogs/firstDog.webp" alt="Cutting dog hair">
@@ -69,7 +69,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="pc">
         <section class="footer-info-section">
             <h6>Información</h6>
             <ul>
@@ -99,10 +99,89 @@
         </section>
         <section class="footer-email-section">
             <h6>Enviar Correo</h6>
-            <p>Para más información o preguntas que tenga puede enviarnos un correo y le resolveremos todas sus dudas.</p>
+            <p>Para más información o preguntas que tenga puede enviarnos un correo y se lo responderemos pronto.</p>
             <input type="email" placeholder="example@domain.com"><button>ENVIAR</button>
         </section>
     </footer>
+
+    <!-- Mobile Tags -->
+    
+    <main class="mobile">
+        <section class="info-mobile-text">
+                <h2>¡Se sentirá de maravilla!</h2>
+                <p>Porque además de darle un nuevo look increíble lo haremos sentir como en casa y le llenaremos de mimos y cuidados.</p>
+                <button class="contact-btn-mobile">Contáctanos</button>
+                <img src="assets/img/Dogs/firstDog.webp" alt="">
+        </section>
+        <section class="mobile-gallery">
+            <article class="mobile-gallery-text">
+                <h3>¡Somos los mejores en lo que hacemos!</h3>
+                <p>Somos conocidos en nuestro sector por el profesionalismo en todos los trabajos que hacemos, estamos enfocados en dar el mejor servicio tanto al caliente como a su mascota.<br><br>Ofrecemos servicio a domicilio para los clientes que no puedan acudir a nuestro lugar de trabajo, ¡Pensamos en todos!</p>
+            </article>
+            <article class="mobile-gallery-photos">
+                <img src="assets/img/Dogs/secondDog.jpg" alt="">
+                <img src="assets/img/Dogs/thirdDog.jpg" alt="">
+                <img src="assets/img/Dogs/fourthDog.jpg" alt="">
+                <img src="assets/img/Dogs/fifthDog.webp" alt="">
+                <img src="assets/img/Dogs/sixthDog.jpg" alt="">
+            </article>
+        </section>
+        <section class="mobile-servicios">
+            <article class="mobile-servicios-text">
+                <h3>Nuestros servicios</h3>
+                <ul>
+                    <li id="washLiMobile" title="Dame click"><img src="assets/css/paw.svg">Peluquería y baño</li>
+                    <p class="li-hidden" id="washPMobile">Nos enfocamos en darle el mejor servicio a su mascota para que luzca un nuevo look increíble, le daremos un baño de burbujas relajante para que se sienta como en casa.</p>
+                    <li id="walkLiMobile" title="Dame click"><img src="assets/css/paw.svg">Paseo de perros</li>
+                    <p class="li-hidden" id="walkPMobile">Si no tienes tiempo para tu mascota ¡No te preocupes! Nosotros estamos para ayudarte, lo cuidaremos y llevaremos a parques para mascotas para que conozca muchos amigos.</p>
+                    <li id="manicureLiMobile" title="Dame click"><img src="assets/css/paw.svg">Manicura</li>
+                    <p class="li-hidden" id="manicurePMobile">¿Tu mascota está descuidada? ¡No te preocupes! Uno de nuestros mejores servicios es brindarle manicura a las mascotas para que luzcan un excelente look.</p>
+                    <li id="daycareLiMobile" title="Dame click"><img src="assets/css/paw.svg">Guardería</li>
+                    <p class="li-hidden" id="daycarePMobile">Si tienes un viaje de negocios importante y no tienes con quién dejar a tu mascota puedes confiar en nosotros, saldremos a pasear todos los días, le daremos amor y muchos premios para que disfrute la compañía de nosotros y claro, la de las demás mascotas!</p>
+                </ul>
+                <article class="mobile-servicios-img">
+                    <img src="assets/img/Dogs/dogDaycare.jpg" alt="">
+                    <img src="assets/img/Dogs/manicureDog.jpg" alt="">
+                    <img src="assets/img/Dogs/walkDog.jpeg" alt="">
+                    <img src="assets/img/Dogs/showerDog.jpg" alt="">
+                </article>
+            </article>
+        </section>
+        <footer class="mobile-footer mobile">
+            <section class="mobile-footer-info-section">
+                <h6>Información</h6>
+                <ul>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Correos</a></li>
+                    <li><a href="#">Números</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </section>
+            <section class="footer-info-section">
+                <h6>Información</h6>
+                <ul>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Correos</a></li>
+                    <li><a href="#">Números</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </section>
+            <section class="footer-info-section">
+                <h6>Información</h6>
+                <ul>
+                    <li><a href="#">Ubicación</a></li>
+                    <li><a href="#">Correos</a></li>
+                    <li><a href="#">Números</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </section>
+            <section class="footer-email-section">
+                <h6>Enviar Correo</h6>
+                <p>Para más información o preguntas que tenga puede enviarnos un correo y le responderemos pronto.</p>
+                <input type="email" placeholder="example@domain.com">
+            </section>
+        </footer>
+    </main>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
