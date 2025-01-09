@@ -237,7 +237,7 @@ header nav ul li a:hover {
 }
 
 .servicios-text ul {
-    list-style-image: url('../../paw.svg');
+    list-style-image: url('./paw.svg');
 }
 
 .servicios-text ul li {
