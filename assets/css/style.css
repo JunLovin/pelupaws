@@ -90,6 +90,7 @@ header nav ul li a {
 header nav ul img {
     position: relative;
     top: .5rem;
+    margin-left: 3rem;
     cursor: pointer;
 }
 
