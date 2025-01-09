@@ -3,7 +3,7 @@ PeluPaw is a  web page to all people that have pets and his hair is so large, he
 
 # Overview
 
-![Screenshot]()
+![Screenshot](/assets/img/screenshot.png)
 
 ## Languages used
 - HTML
