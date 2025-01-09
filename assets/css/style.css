@@ -60,7 +60,7 @@ header {
     width: 100%;
     background-color: var(--white);
     height: 7rem;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--dark-sage);
     transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
 }
 
