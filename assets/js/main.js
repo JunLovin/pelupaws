@@ -1,3 +1,4 @@
+const contactBtn = document.querySelector('.contact-btn')
 const washLi = document.getElementById('washLi')
 const washP = document.getElementById('washP')
 const walkLi = document.getElementById('walkLi')
@@ -27,4 +28,10 @@ moon.addEventListener('click', () => {
 
 sun.addEventListener('click', () => {
     body.classList.remove('darkMode')
+})
+
+// Contact Button Function
+
+contactBtn.addEventListener('click', () => {
+    contactBtn.setAttribute('onclick', 'location.href = "https://wa.me/+593980703975"');
 })
