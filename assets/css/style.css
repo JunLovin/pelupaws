@@ -357,6 +357,13 @@ footer section ul li a:hover {
     position: relative;
     bottom: 2.6rem;
     left: 14.7rem;
+    transition: all 50ms ease-in-out;
+}
+
+.footer-email-section button:active {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
 }
 
 /* Mobile Design */
