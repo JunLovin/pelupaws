@@ -8,4 +8,4 @@ PeluPaw is a  web page to all people that have pets and his hair is so large, he
 ## Languages used
 - HTML
 - CSS
-- JavaScript"# pelupaws" 
+- JavaScript
