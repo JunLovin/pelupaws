@@ -32,7 +32,7 @@ body.darkMode {
 
 body.darkMode header {
     background-color: var(--black);
-    border-bottom-color: var(--semi-white);
+    border-bottom-color: var(--dark-sage);
 }
 
 body.darkMode header nav ul li a {
